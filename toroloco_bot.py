@@ -1,10 +1,13 @@
+"""
+Telegram bot that sends photos to chat groups.
+"""
 import telebot
 import os
 import random
 import logging
 
 # CONSTANTS
-TOKEN = "714529585:AAHi_JisI_7ztewDLZeaoHsUUSrDRMlR2VY"
+TOKEN = ""
 PHOTOS_DIR = "./photos"
 CHATS_DB = "Chats.dat"
 
@@ -73,13 +76,13 @@ if __name__ == '__main__':
     chats = load_chats()
     updates = bot.get_updates()
     chats |= set([u.message.chat.id for u in updates if u.message.chat.type == 'group'])
-    logging.info("#Group chats: %i" % len(chats))
+    logging.info("#Chat groups: %i" % len(chats))
 
     photo = get_random_photo()
     invalid_chats = send_photo(bot, chats, photo)
     chats -= invalid_chats
-    logging.info("#Photo (%s) sent to %i group chats." % (photo, len(chats)))
-    logging.info("#Invalid chats: %i" % len(invalid_chats))
+    logging.info("#Photo (%s) sent to %i chat groups." % (photo, len(chats)))
+    logging.info("#Invalid chat groups: %i" % len(invalid_chats))
 
     save_chats(chats)
 
