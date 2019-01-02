@@ -55,15 +55,15 @@ def send_photo(bot, chats, photo):
     """ Send a photo to all chats.
     Return the set of chats that do not exist anymore. """
     invalid_chats = []
-    image = open(PHOTOS_DIR + '/' + photo, 'rb')
     for c in chats:
         try:
+            image = open(PHOTOS_DIR + '/' + photo, 'rb')
             bot.send_photo(c, image)
+            image.close()
         except Exception as error:
             logging.error("Invalid chat: %i.\n%s" % (c, error))
             print(error)
             invalid_chats.append(c)
-    image.close()
     return set(invalid_chats)
 
 
@@ -75,6 +75,9 @@ if __name__ == '__main__':
 
     chats = load_chats()
     updates = bot.get_updates()
+    for u in updates:
+        if u.message.chat.title != None:
+            print("Chat: " + str(u.message.chat.title + " -> " + str(u.message.chat.id)))
     chats |= set([u.message.chat.id for u in updates if u.message.chat.type == 'group'])
     logging.info("#Chat groups: %i" % len(chats))
 
