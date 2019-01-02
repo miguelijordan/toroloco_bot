@@ -75,9 +75,6 @@ if __name__ == '__main__':
 
     chats = load_chats()
     updates = bot.get_updates()
-    for u in updates:
-        if u.message.chat.title != None:
-            print("Chat: " + str(u.message.chat.title + " -> " + str(u.message.chat.id)))
     chats |= set([u.message.chat.id for u in updates if u.message.chat.type == 'group'])
     logging.info("#Chat groups: %i" % len(chats))
 
