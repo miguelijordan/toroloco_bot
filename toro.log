@@ -1,0 +1,72 @@
+2019-01-01 16:47:58,601 - root - INFO: Toro Loco running...
+2019-01-01 16:47:58,873 - root - INFO: #Group chats: 1
+2019-01-01 16:47:58,889 - root - INFO: #Photos: 47
+2019-01-01 16:47:59,307 - root - INFO: #Photo (toro19.jpg) sent to 1 group chats.
+2019-01-01 16:47:59,307 - root - INFO: #Invalid chats: 0
+2019-01-01 16:47:59,319 - root - INFO: Toro Loco finished!
+2019-01-01 16:48:28,368 - root - INFO: Toro Loco running...
+2019-01-01 16:48:28,642 - root - INFO: #Group chats: 1
+2019-01-01 16:48:28,657 - root - INFO: #Photos: 47
+2019-01-01 16:48:28,876 - root - INFO: #Photo (toro44.jpg) sent to 1 group chats.
+2019-01-01 16:48:28,879 - root - INFO: #Invalid chats: 0
+2019-01-01 16:48:28,925 - root - INFO: Toro Loco finished!
+2019-01-01 16:50:57,325 - root - INFO: Toro Loco running...
+2019-01-01 16:50:57,336 - root - INFO: #Group chats: 1
+2019-01-01 16:50:57,599 - root - INFO: #New group chats: 1
+2019-01-01 16:50:57,616 - root - INFO: #Photos: 47
+2019-01-01 16:50:57,987 - root - INFO: #Photo (toro16.jpg) sent to 1 group chats.
+2019-01-01 16:50:57,990 - root - INFO: #Invalid chats: 0
+2019-01-01 16:50:58,035 - root - INFO: Toro Loco finished!
+2019-01-01 16:51:10,300 - root - INFO: Toro Loco running...
+2019-01-01 16:51:10,311 - root - INFO: #Group chats: 1
+2019-01-01 16:51:10,530 - root - INFO: #New group chats: 1
+2019-01-01 16:51:10,534 - root - INFO: #Photos: 47
+2019-01-01 16:51:10,794 - root - INFO: #Photo (toro8.jpg) sent to 1 group chats.
+2019-01-01 16:51:10,795 - root - INFO: #Invalid chats: 0
+2019-01-01 16:51:10,829 - root - INFO: Toro Loco finished!
+2019-01-02 13:08:37,028 - root - INFO: Toro Loco running...
+2019-01-02 13:09:06,108 - root - INFO: Toro Loco running...
+2019-01-02 13:09:06,324 - root - INFO: #Chat groups: 2
+2019-01-02 13:09:06,334 - root - INFO: #Photos: 47
+2019-01-02 13:09:06,611 - root - ERROR: Invalid chat: -9977534.
+A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: file must be non-empty"}']
+2019-01-02 13:09:06,617 - root - INFO: #Photo (toro33.jpg) sent to 1 chat groups.
+2019-01-02 13:09:06,620 - root - INFO: #Invalid chat groups: 1
+2019-01-02 13:09:06,656 - root - INFO: Toro Loco finished!
+2019-01-02 13:10:27,844 - root - INFO: Toro Loco running...
+2019-01-02 13:10:38,316 - root - INFO: Toro Loco running...
+2019-01-02 13:10:38,553 - root - INFO: #Chat groups: 2
+2019-01-02 13:10:38,562 - root - INFO: #Photos: 47
+2019-01-02 13:10:38,891 - root - ERROR: Invalid chat: -9977534.
+A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: file must be non-empty"}']
+2019-01-02 13:10:38,895 - root - INFO: #Photo (toro4.jpg) sent to 1 chat groups.
+2019-01-02 13:10:38,897 - root - INFO: #Invalid chat groups: 1
+2019-01-02 13:10:38,925 - root - INFO: Toro Loco finished!
+2019-01-02 13:11:02,777 - root - INFO: Toro Loco running...
+2019-01-02 13:11:30,304 - root - INFO: Toro Loco running...
+2019-01-02 13:11:30,542 - root - INFO: #Chat groups: 2
+2019-01-02 13:11:30,555 - root - INFO: #Photos: 47
+2019-01-02 13:11:30,848 - root - ERROR: Invalid chat: -9977534.
+A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: file must be non-empty"}']
+2019-01-02 13:11:30,853 - root - INFO: #Photo (toro18.jpg) sent to 1 chat groups.
+2019-01-02 13:11:30,858 - root - INFO: #Invalid chat groups: 1
+2019-01-02 13:11:30,892 - root - INFO: Toro Loco finished!
+2019-01-02 13:11:42,330 - root - INFO: Toro Loco running...
+2019-01-02 13:11:42,580 - root - INFO: #Chat groups: 2
+2019-01-02 13:11:42,598 - root - INFO: #Photos: 47
+2019-01-02 13:11:43,000 - root - ERROR: Invalid chat: -9977534.
+A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: file must be non-empty"}']
+2019-01-02 13:11:43,007 - root - INFO: #Photo (toro15.jpg) sent to 1 chat groups.
+2019-01-02 13:11:43,011 - root - INFO: #Invalid chat groups: 1
+2019-01-02 13:11:43,051 - root - INFO: Toro Loco finished!
+2019-01-02 13:12:44,066 - root - INFO: Toro Loco running...
+2019-01-02 13:12:44,283 - root - INFO: #Chat groups: 2
+2019-01-02 13:12:44,287 - root - INFO: #Photos: 47
+2019-01-02 13:12:44,767 - root - INFO: #Photo (toro3.jpg) sent to 2 chat groups.
+2019-01-02 13:12:44,777 - root - INFO: #Invalid chat groups: 0
+2019-01-02 13:12:44,836 - root - INFO: Toro Loco finished!
+2019-02-13 14:11:37,304 - root - INFO: Toro Loco running...

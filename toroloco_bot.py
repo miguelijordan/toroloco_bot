@@ -51,13 +51,13 @@ def get_random_photo():
         sample = None
     return sample
 
-def send_photo(bot, chats, photo):
+def send_photo(bot, chats, photo_path):
     """ Send a photo to all chats.
     Return the set of chats that do not exist anymore. """
     invalid_chats = []
     for c in chats:
         try:
-            image = open(PHOTOS_DIR + '/' + photo, 'rb')
+            image = open(photo_path, 'rb')
             bot.send_photo(c, image)
             image.close()
         except Exception as error:
@@ -65,6 +65,12 @@ def send_photo(bot, chats, photo):
             print(error)
             invalid_chats.append(c)
     return set(invalid_chats)
+
+def get_photo_path(photo):
+    return PHOTOS_DIR + '/' + photo
+
+def remove_photo(photo_path):
+    os.remove(photo_path)
 
 
 if __name__ == '__main__':
@@ -79,11 +85,15 @@ if __name__ == '__main__':
     logging.info("#Chat groups: %i" % len(chats))
 
     photo = get_random_photo()
-    invalid_chats = send_photo(bot, chats, photo)
-    chats -= invalid_chats
-    logging.info("#Photo (%s) sent to %i chat groups." % (photo, len(chats)))
-    logging.info("#Invalid chat groups: %i" % len(invalid_chats))
+    if photo is not None:
+        photo_path = get_photo_path(photo)
+        invalid_chats = send_photo(bot, chats, photo_path)
+        remove_photo(photo_path)
 
-    save_chats(chats)
+        chats -= invalid_chats
+        logging.info("#Photo (%s) sent to %i chat groups." % (photo_path, len(chats)))
+        logging.info("#Invalid chat groups: %i" % len(invalid_chats))
+
+        save_chats(chats)
 
     logging.info("Toro Loco finished!")
